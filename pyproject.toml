@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "vectormatch"
+version = "0.1.0"
+description = ""
+authors = ["Aria AI Labs"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+psycopg2 = "*"
+sentence-transformers = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
